@@ -12,6 +12,12 @@
   <meta property="og:description" content="Go · APIs & Microservices · Cloud & Kubernetes. 4.5 years across enterprise and startup environments." />
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Retro fonts (falls back to monospace if offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="css/styles.css" />
 
   <script type="application/ld+json">
@@ -37,7 +43,10 @@
 
   <header class="site-header">
     <nav class="nav container" aria-label="Primary">
-      <a href="#top" class="logo" aria-label="Sanjay Wilson — home">&lt;sanjay&nbsp;/&gt;</a>
+      <a href="#top" class="logo" aria-label="Sanjay Wilson — home">
+        <img class="logo-invader" src="assets/invader.svg" width="18" height="13" alt="" />
+        <span>SANJAY_W</span>
+      </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
@@ -55,32 +64,50 @@
   <main id="main">
     <!-- ============ HERO ============ -->
     <section class="hero container">
-      <p class="eyebrow mono">// hello, world</p>
-      <h1>Sanjay Wilson</h1>
-      <p class="role">Backend Software Engineer</p>
-      <p class="tagline mono">Go / Golang &nbsp;·&nbsp; APIs &amp; Microservices &nbsp;·&nbsp; Cloud &amp; Containerization (Kubernetes)</p>
-      <p class="hero-summary">
-        4.5 years designing and delivering high-performance APIs, services and reusable backend
-        components in Go, Node.js and Java — across enterprise (IBM) and startup environments.
-        I've cut testing time by more than 50% with a custom Kubernetes operator and automated
-        performance tooling, and reduced core API response times by up to 80%.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#work">View my work</a>
-        <a class="btn btn-ghost" href="mailto:sanjaywilsonktm@gmail.com">Get in touch</a>
-        <!-- Resume PDF: drop your file at assets/Sanjay_Wilson_Resume.pdf -->
-        <a class="btn btn-ghost" href="assets/Sanjay_Wilson_Resume.pdf" download>Resume (PDF) ↓</a>
+      <div class="hero-text">
+        <p class="kicker blink">INSERT COIN</p>
+        <h1>SANJAY WILSON</h1>
+        <p class="role">BACKEND SOFTWARE ENGINEER</p>
+        <p class="tagline">GO / GOLANG &nbsp;·&nbsp; APIS &amp; MICROSERVICES &nbsp;·&nbsp; KUBERNETES</p>
+        <p class="hero-summary">
+          4.5 years designing and delivering high-performance APIs, services and reusable
+          backend components in Go, Node.js and Java — across enterprise (IBM) and startup
+          environments. I've cut testing time by more than 50% with a custom Kubernetes
+          operator and automated performance tooling, and reduced core API response times
+          by up to 80%.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">PRESS START &gt;</a>
+          <a class="btn" href="mailto:sanjaywilsonktm@gmail.com">EMAIL ME</a>
+          <!-- Resume PDF: drop your file at assets/Sanjay_Wilson_Resume.pdf -->
+          <a class="btn" href="assets/Sanjay_Wilson_Resume.pdf" download>RESUME.PDF</a>
+        </div>
+        <ul class="scores" role="list">
+          <li><span class="score-label">EXP</span><span class="score-val">4.5 YRS</span></li>
+          <li><span class="score-label">COMPANIES</span><span class="score-val">3</span></li>
+          <li><span class="score-label">API SPEEDUP</span><span class="score-val">+80%</span></li>
+          <li><span class="score-label">TEST TIME</span><span class="score-val">-50%</span></li>
+        </ul>
+        <ul class="hero-meta">
+          <li>Adelaide, SA — Australia</li>
+          <li>ACS Accredited</li>
+          <li>Unrestricted work rights</li>
+        </ul>
       </div>
-      <ul class="hero-meta mono">
-        <li>Adelaide, SA — Australia</li>
-        <li>ACS Accredited</li>
-        <li>Unrestricted work rights</li>
-      </ul>
+      <img class="hero-invader" src="assets/invader.svg" width="120" height="87" alt="Retro arcade invader sprite" />
     </section>
+
+    <!-- ============ TICKER ============ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span class="ticker-half">GO <b>&gt;</b> KUBERNETES <b>&gt;</b> MICROSERVICES <b>&gt;</b> REST APIS <b>&gt;</b> OPENSHIFT <b>&gt;</b> REACT <b>&gt;</b> SPRING BOOT <b>&gt;</b> NODE.JS <b>&gt;</b> DOCKER <b>&gt;</b> JENKINS CI/CD <b>&gt;</b> K6 <b>&gt;</b> MONGODB <b>&gt;</b> TYPESCRIPT <b>&gt;</b> OPERATOR SDK <b>&gt;</b>&nbsp;</span>
+        <span class="ticker-half">GO <b>&gt;</b> KUBERNETES <b>&gt;</b> MICROSERVICES <b>&gt;</b> REST APIS <b>&gt;</b> OPENSHIFT <b>&gt;</b> REACT <b>&gt;</b> SPRING BOOT <b>&gt;</b> NODE.JS <b>&gt;</b> DOCKER <b>&gt;</b> JENKINS CI/CD <b>&gt;</b> K6 <b>&gt;</b> MONGODB <b>&gt;</b> TYPESCRIPT <b>&gt;</b> OPERATOR SDK <b>&gt;</b>&nbsp;</span>
+      </div>
+    </div>
 
     <!-- ============ ABOUT ============ -->
     <section id="about" class="section container">
-      <h2 class="section-title"><span class="mono accent">01.</span> About</h2>
+      <h2 class="section-title"><span class="kicker">STAGE 01</span>ABOUT</h2>
       <div class="about-grid">
         <div class="reveal">
           <p>
@@ -98,26 +125,27 @@
             I'm currently working as an independent developer and open to new opportunities.
           </p>
         </div>
-        <ul class="facts reveal">
-          <li><span class="mono accent">4.5+</span> years professional experience</li>
-          <li><span class="mono accent">3</span> companies — enterprise, consulting &amp; startup</li>
-          <li><span class="mono accent">Go · Node.js · Java</span> primary stack</li>
-          <li><span class="mono accent">K8s · OpenShift</span> operators &amp; CI/CD</li>
-          <li><span class="mono accent">Independent</span> developer, currently</li>
+        <ul class="facts reveal" role="list">
+          <li><span class="fact-num">4.5+</span> years professional experience</li>
+          <li><span class="fact-num">3</span> companies — enterprise, consulting &amp; startup</li>
+          <li><span class="fact-num">GO · NODE · JAVA</span> primary stack</li>
+          <li><span class="fact-num">K8S · OKD</span> operators &amp; CI/CD</li>
+          <li><span class="fact-num">INDIE</span> developer, currently</li>
         </ul>
       </div>
     </section>
 
     <!-- ============ EXPERIENCE ============ -->
     <section id="experience" class="section container">
-      <h2 class="section-title"><span class="mono accent">02.</span> Experience</h2>
+      <h2 class="section-title"><span class="kicker">STAGE 02 · LEVELS CLEARED</span>EXPERIENCE</h2>
       <ol class="timeline">
         <li class="timeline-item reveal">
           <div class="timeline-head">
+            <span class="level">LEVEL 3</span>
             <h3>Software Developer</h3>
             <p class="org">IBM India Software Labs</p>
           </div>
-          <p class="meta mono">Oct 2023 – Nov 2024 · Bangalore, India</p>
+          <p class="meta">Oct 2023 – Nov 2024 · Bangalore, India</p>
           <ul>
             <li>Developed a Go + Node.js tool automating performance testing, reducing testing time by more than 50%.</li>
             <li>Designed and delivered a custom OpenShift operator for running on-demand performance tests in Kubernetes and OpenShift environments.</li>
@@ -126,10 +154,11 @@
         </li>
         <li class="timeline-item reveal">
           <div class="timeline-head">
+            <span class="level">LEVEL 2</span>
             <h3>Associate Consultant</h3>
             <p class="org">Infosys — Goldman Sachs</p>
           </div>
-          <p class="meta mono">Oct 2021 – Sep 2023 · Bangalore, India</p>
+          <p class="meta">Oct 2021 – Sep 2023 · Bangalore, India</p>
           <ul>
             <li>Delivered backend features in Java/Spring Boot microservices alongside React/TypeScript frontend work for Goldman Sachs Internal Audit web applications.</li>
             <li>Migrated an entire UI application from Webpack to Vite, cutting build times and improving the developer feedback loop.</li>
@@ -138,10 +167,11 @@
         </li>
         <li class="timeline-item reveal">
           <div class="timeline-head">
+            <span class="level">LEVEL 1</span>
             <h3>Associate Software Engineer</h3>
             <p class="org">Bazinga Media Pvt Ltd</p>
           </div>
-          <p class="meta mono">Feb 2020 – Jul 2021 · Bangalore, India</p>
+          <p class="meta">Feb 2020 – Jul 2021 · Bangalore, India</p>
           <ul>
             <li>Owned development and maintenance of the company-wide CRM in an e-commerce environment, working directly with founders on the roadmap.</li>
             <li>Reduced response time of core statistics and dashboard APIs by 80% through complex MongoDB aggregations.</li>
@@ -153,65 +183,65 @@
 
     <!-- ============ WORK / HIGHLIGHTS ============ -->
     <section id="work" class="section container">
-      <h2 class="section-title"><span class="mono accent">03.</span> Selected Work</h2>
+      <h2 class="section-title"><span class="kicker">STAGE 03 · HI-SCORES</span>SELECTED WORK</h2>
       <p class="section-intro">Highlights from my time at IBM, Infosys and Bazinga Media.</p>
       <div class="card-grid">
         <article class="card reveal">
           <h3>Automated Performance Testing</h3>
-          <p class="org mono">IBM India Software Labs</p>
+          <p class="org">IBM India Software Labs</p>
           <p>
             A Go + Node.js tool that automates performance testing end-to-end,
             cutting testing time by more than 50% across environments.
           </p>
-          <ul class="tags mono">
+          <ul class="tags">
             <li>Go</li><li>Node.js</li><li>k6</li>
           </ul>
           <!-- Optional: add a link to the project/repo
-          <a class="card-link" href="https://example.com">View project →</a>
+          <a class="card-link" href="https://example.com">VIEW PROJECT &gt;</a>
           -->
         </article>
         <article class="card reveal">
           <h3>Custom OpenShift Operator</h3>
-          <p class="org mono">IBM India Software Labs</p>
+          <p class="org">IBM India Software Labs</p>
           <p>
             A Kubernetes operator built with the Operator SDK that runs
             on-demand performance tests inside Kubernetes and OpenShift clusters.
           </p>
-          <ul class="tags mono">
+          <ul class="tags">
             <li>Kubernetes</li><li>OpenShift</li><li>Operator SDK</li>
           </ul>
           <!-- Optional: add a link to the project/repo
-          <a class="card-link" href="https://example.com">View project →</a>
+          <a class="card-link" href="https://example.com">VIEW PROJECT &gt;</a>
           -->
         </article>
         <article class="card reveal">
           <h3>Build &amp; Test Modernization</h3>
-          <p class="org mono">Infosys — Goldman Sachs</p>
+          <p class="org">Infosys — Goldman Sachs</p>
           <p>
             Migrated an Internal Audit UI from Webpack to Vite and its full
             test suite from Enzyme/Karma to Vitest + React Testing Library —
             faster builds, stronger automated tests.
           </p>
-          <ul class="tags mono">
+          <ul class="tags">
             <li>Vite</li><li>Vitest</li><li>React</li><li>TypeScript</li>
           </ul>
           <!-- Optional: add a link to the project/repo
-          <a class="card-link" href="https://example.com">View project →</a>
+          <a class="card-link" href="https://example.com">VIEW PROJECT &gt;</a>
           -->
         </article>
         <article class="card reveal">
           <h3>E-commerce CRM &amp; Integrations</h3>
-          <p class="org mono">Bazinga Media Pvt Ltd</p>
+          <p class="org">Bazinga Media Pvt Ltd</p>
           <p>
             Owned the company-wide CRM: REST APIs, JWT auth, Shopify and
             shipping-aggregator integrations — plus MongoDB aggregations that
             made dashboard APIs 80% faster.
           </p>
-          <ul class="tags mono">
+          <ul class="tags">
             <li>Node.js</li><li>Express</li><li>MongoDB</li><li>REST</li>
           </ul>
           <!-- Optional: add a link to the project/repo
-          <a class="card-link" href="https://example.com">View project →</a>
+          <a class="card-link" href="https://example.com">VIEW PROJECT &gt;</a>
           -->
         </article>
       </div>
@@ -219,35 +249,35 @@
 
     <!-- ============ SKILLS ============ -->
     <section id="skills" class="section container">
-      <h2 class="section-title"><span class="mono accent">04.</span> Skills</h2>
+      <h2 class="section-title"><span class="kicker">STAGE 04 · PLAYER STATS</span>SKILLS</h2>
       <div class="skills-grid">
         <div class="skill-group reveal">
           <h3>Languages</h3>
-          <ul class="tags mono">
+          <ul class="tags">
             <li>Go (Golang)</li><li>JavaScript / TypeScript</li><li>Java</li><li>PHP</li>
           </ul>
         </div>
         <div class="skill-group reveal">
           <h3>Backend &amp; APIs</h3>
-          <ul class="tags mono">
+          <ul class="tags">
             <li>REST</li><li>Microservices</li><li>Node.js / Express</li><li>Spring Boot</li><li>JWT authentication</li><li>API design &amp; documentation</li>
           </ul>
         </div>
         <div class="skill-group reveal">
           <h3>Cloud &amp; Infrastructure</h3>
-          <ul class="tags mono">
+          <ul class="tags">
             <li>Kubernetes</li><li>OpenShift</li><li>Docker</li><li>Operator SDK</li><li>Jenkins CI/CD</li><li>GitLab</li>
           </ul>
         </div>
         <div class="skill-group reveal">
           <h3>Testing &amp; Observability</h3>
-          <ul class="tags mono">
+          <ul class="tags">
             <li>Unit / integration testing</li><li>Vitest</li><li>React Testing Library</li><li>k6</li><li>JMeter</li><li>Kafka</li><li>InfluxDB</li>
           </ul>
         </div>
         <div class="skill-group reveal">
           <h3>Practices</h3>
-          <ul class="tags mono">
+          <ul class="tags">
             <li>Version control</li><li>Branching &amp; merging strategies</li><li>Code review</li><li>Technical documentation</li>
           </ul>
         </div>
@@ -256,14 +286,14 @@
 
     <!-- ============ EDUCATION & CERTS ============ -->
     <section id="education" class="section container">
-      <h2 class="section-title"><span class="mono accent">05.</span> Education &amp; Certifications</h2>
+      <h2 class="section-title"><span class="kicker">STAGE 05 · ACHIEVEMENTS</span>EDUCATION &amp; CERTIFICATIONS</h2>
       <div class="edu-grid">
         <div class="reveal">
           <h3>Education</h3>
           <ul class="edu-list">
             <li>
               <strong>Bachelor of Technology — Computer Science &amp; Engineering</strong>
-              <span class="mono">VIT University · 2020</span>
+              <span class="edu-meta">VIT University · 2020</span>
             </li>
           </ul>
           <h3>Certifications</h3>
@@ -281,11 +311,11 @@
           <ul class="edu-list">
             <li>
               <strong>ACS Accredited</strong>
-              <span class="mono">Australian Computer Society</span>
+              <span class="edu-meta">Australian Computer Society</span>
             </li>
             <li>
               <strong>Unrestricted Work Rights</strong>
-              <span class="mono">Australia</span>
+              <span class="edu-meta">Australia</span>
             </li>
           </ul>
         </div>
@@ -294,26 +324,29 @@
 
     <!-- ============ CONTACT ============ -->
     <section id="contact" class="section container">
-      <h2 class="section-title"><span class="mono accent">06.</span> Contact</h2>
+      <h2 class="section-title"><span class="kicker">STAGE 06 · FINAL BOSS</span>CONTACT</h2>
       <p class="section-intro">
         I'm currently working independently and open to new opportunities.
         The fastest way to reach me is email.
       </p>
+      <div class="contact-cta">
+        <a class="btn btn-primary" href="mailto:sanjaywilsonktm@gmail.com">INSERT COIN &gt; SAY HI</a>
+      </div>
       <div class="contact-grid">
         <a class="contact-card reveal" href="mailto:sanjaywilsonktm@gmail.com">
-          <span class="mono accent">email</span>
+          <span class="c-label">EMAIL</span>
           <strong>sanjaywilsonktm@gmail.com</strong>
         </a>
         <a class="contact-card reveal" href="tel:+61466993691">
-          <span class="mono accent">phone</span>
+          <span class="c-label">PHONE</span>
           <strong>+61 466 993 691</strong>
         </a>
         <a class="contact-card reveal" href="https://www.linkedin.com/in/sanjay-wilson" target="_blank" rel="noopener">
-          <span class="mono accent">linkedin</span>
+          <span class="c-label">LINKEDIN</span>
           <strong>linkedin.com/in/sanjay-wilson</strong>
         </a>
         <div class="contact-card reveal">
-          <span class="mono accent">location</span>
+          <span class="c-label">LOCATION</span>
           <strong>Athelstone, Adelaide SA 5076</strong>
         </div>
       </div>
@@ -322,8 +355,8 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="mono">© <span id="year"></span> Sanjay Wilson</p>
-      <p class="mono">Built with plain HTML, CSS &amp; JS — no frameworks harmed.</p>
+      <p>&copy; <span id="year"></span> SANJAY WILSON</p>
+      <p>THANKS FOR PLAYING — NO COINS NEEDED<span class="blink">_</span></p>
     </div>
   </footer>
 

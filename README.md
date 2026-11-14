@@ -1,18 +1,25 @@
 # Sanjay Wilson — Portfolio
 
 A plain static portfolio site: **HTML + CSS + vanilla JS**, no build step, no dependencies.
+Themed as a **retro arcade cabinet** (dark + teal, magenta/coin-yellow accents, CRT scanlines,
+pixel fonts, a floating invader sprite).
 
 ## Structure
 
 ```
 portfolio/
 ├── index.html              # The whole site (single page)
-├── css/styles.css          # Dark theme, responsive layout
+├── css/styles.css          # Arcade theme, CRT overlay, responsive layout
 ├── js/main.js              # Mobile nav, scroll reveal, footer year
 ├── assets/
 │   ├── favicon.svg
+│   ├── invader.svg         # Pixel invader sprite (hero + cards + logo)
 │   └── Sanjay_Wilson_Resume.pdf   # ← add your resume PDF here
 └── Sanjay_Wilson_Resume.docx       # Source resume (optional to commit)
+
+**Fonts:** "Press Start 2P" + "VT323" are loaded from Google Fonts with
+monospace fallbacks — the site still works fully offline, it just loses the
+pixel type.
 ```
 
 ## Run locally
@@ -50,5 +57,9 @@ There's no build step, so the folder root is the publish directory.
 
 ## Customizing
 
-- **Colors/fonts:** CSS variables at the top of `css/styles.css` (`--accent`, `--bg`, etc.).
-- **Content:** all resume-derived content lives in `index.html` — sections are clearly marked.
+- **Colors:** CSS variables at the top of `css/styles.css` (`--accent` teal, `--pink`,
+  `--yellow`, `--bg`, `--border`, ...).
+- **CRT effects:** scanlines/vignette live in the `body::before` / `body::after` rules
+  — tweak opacity there or delete them for a flat look.
+- **Content:** all resume-derived content lives in `index.html` — sections are clearly marked
+  (STAGE 01–06).
